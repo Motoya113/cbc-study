@@ -1,0 +1,210 @@
+@charset "UTF-8";
+/* 初期設定*/
+body{
+    color: #060606;
+    font-size: 16px;
+    font-family: sans-serif;
+    letter-spacing: 0.06cm; /*add*/
+}
+a{
+    text-decoration: none;
+    color: #060606;
+}
+
+/********************************
+ header
+********************************/
+.header {
+    width: 100%;
+    padding: 10px; /*add*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0,.15); /*add*/
+}
+.header__wrap{
+    width: 85%; /*固定幅に*/
+    margin:0 auto; /*センタリングします*/
+    display: flex; /*中身を横並びにしたいのでflex*/
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{ /*決まっている画像のサイズを入力*/
+    width: 54px;
+    height: 76px;
+}
+.header__logo a{
+    display: block;
+}
+.header__menu{  /*liタグを横並びにしたいのでflex*/
+}
+.header__menu ul{
+    display: flex;
+}
+.header__menu ul li {
+    width: 80px;
+}
+.header__menu ul li a{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/*******************************
+ main
+*******************************/
+.main {
+}
+.main__kv{
+    height: 70vh; /*決められている高さを指定します*/
+    display: flex; /*add*/
+    align-items: center; /*add*/
+    background: url(../images/top_kv.jpg) center/cover no-repeat; /*add*/
+    font:normal 24px/1.8 sans-serif; /*add*/
+    padding-left: 10%; /*add*/
+}
+.main__about{
+    width: 85%; /*固定幅でセンタリング*/
+    margin: 50px auto 200px;
+    padding: 0 10px 80px; 
+}
+.main__about--ttl{
+    margin-bottom: 60px;
+    text-align: center;
+    /*add*/
+    color: #060606;
+    font-size: 28px;
+    letter-spacing: 4px;
+    margin-bottom: 60px;
+    /*add*/
+}
+.main__about--logo{
+    width: 40%;
+    margin:0 auto;
+}
+.main__about--txt{
+    margin: 45px 0 60px;
+    text-align: center;
+    /*add*/
+    padding:0 20px;
+    font:normal 16px/2 sans-serif;
+    letter-spacing: 4px;
+    /*add*/
+}
+.main__service{
+    width: 85%; /*固定幅でセンタリング*/
+    margin: 10px auto 100px;
+    padding:20px 20px 100px; 
+    background-color:#fffbe8; 
+}
+.main__service--message{ /*中規模の枠*/
+    margin-bottom: 95px;
+}
+.main__service--message h2 {
+    /*add*/
+    font-size: 50px;
+    font-weight: bold;
+    /*add*/
+}
+.main__service--message p {
+    width: 67%;
+    margin: 40px 0 0 auto;
+    /*add*/
+    font-size: 16px;
+    line-height: 2.2;
+    letter-spacing: 2px;
+    /*add*/
+}
+
+.main__service--list{ /*中規模の枠*/
+    display: flex;
+}
+.main__service--list li{
+    flex: 1;
+    /*add*/
+    margin-right: 2%;
+    /*add*/
+}
+.main__service--list li a{
+    display: block;
+    height: 100%;
+}
+.main__service--list li img{
+    width: 100%;
+    /*add*/
+    display: block;
+    /*add*/
+}
+.main__service--list li h3{
+    margin: 50px 0 30px 0;
+}
+.main__service--list li p{
+}
+.main__news{
+    width: 85%; /*固定幅でセンタリング*/
+    margin: 10px auto;
+    padding: 0 20px 0; 
+}
+.main__news--ttl{
+    margin-bottom: 16px;
+    /*add*/
+    font-size: 48px;
+    /*add*/
+}
+.main__news--list{
+    padding: 40px 12px;
+    /*add*/
+    border-top: 1px solid #a7b7bf;
+    /*add*/
+}
+.main__news--list li{
+    /*add*/
+    border-bottom: 1px solid #e8ecee;
+    /*add*/
+}
+/*add*/
+.main__news--list li:first-child{
+    border-top: 1px solid #e8ecee;
+}
+/*add*/
+.main__news--list li a{
+    display: block; /*aタグ全体でリンクできるようにblock化*/
+    padding: 50px 20px;
+    /*add*/
+    display:block;
+    /*add*/
+}
+/*add*/
+.main__news--list li a:hover{
+    background: #e8ecee;
+}
+/*add*/
+.main__news--item{
+    display: flex; /*中の要素を横並びにする*/
+}
+.main__news--day{
+    width: 265px;
+    display: flex; /*天地のセンターにためにはflex*/
+    align-items: center; /*天地のセンターにする*/
+    margin-right: 32px;
+}
+.main__news--data {
+    /*add*/
+    line-height: 1.8;
+    /*add*/
+}
+
+/*******************************
+ footer
+*******************************/
+.footer { /*内側　上に90px 下に71pxの余白*/
+    padding: 90px 0 71px;
+    border-top: 1px solid #e8ecee; /*add*/
+}
+.footer__logo{
+    width: 100px;
+    margin: 0 auto; /*真ん中に*/
+}
+.footer__copyright{
+    color: #b5b5b5;
+    font-size: 11px;
+    margin-top: 31px;
+    text-align: center; /*文字を真ん中に*/
+}

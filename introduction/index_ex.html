@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>flexテスト</title>
+    </head>
+    <body>
+        <style>
+            .header{
+                display:flex;
+            }
+            .header-nav {
+                display:flex;
+                margin-left:auto;
+            }   
+            .key {
+                height: 100px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            .column{
+                display:flex;
+                flex-wrap: wrap;
+                align-content: space-around;
+            }
+            .col{
+                 width:30%;
+            }
+
+          
+        </style>
+        
+        <div class="container">
+            <div class="header">
+                <div class="header-logo">logo</div>
+                <ul class="header-nav">
+                    <li class="header-nav-a">menuA</li>
+                    <li class="header-nav-a">menuB</li>
+                    <li class="header-nav-a">menuC</li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="key">key</div>
+                <ul class="column">
+                    <li class="col">col1</li>
+                    <li class="col">col2</li>
+                    <li class="col">col3</li>
+                    <li class="col">col4</li>
+                    <li class="col">col5</li>
+                    <li class="col">col6</li>
+                </ul>
+            </div>
+            <div class="footer">footer</div>
+        </div>
+        
+    </body>
+
+</html>
